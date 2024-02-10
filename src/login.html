@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="h-screen flex flex-col justify-center items-center bg-gray-800">
+      <form action="" class="flex flex-col w-1/4 px-9" id="form">
+        <div class="py-2">
+          <label for="" class="text-white text-lg">Username</label>
+          <input
+            class="border-1 border-slate-400 rounded-lg p-2 w-full outline-none"
+            type="text"
+            placeholder="Username"
+            id="usernameInput"
+          />
+        </div>
+        <div class="py-2">
+          <label for="" class="text-white text-lg">Password</label>
+          <input
+            class="border-1 border-slate-400 rounded-lg p-2 w-full outline-none"
+            type="password"
+            placeholder="Enter password"
+            id="passwordInput"
+          />
+        </div>
+        <div class="flex flex-col p-1">
+          <button
+            class="text-white border-2 border-grey rounded-xl py-1 font-semibold font-sans w-full my-1"
+            onclick="onLogin()"
+            id="loginButton"
+          >
+            Login
+          </button>
+          <p class="text-white">
+            Don't have an account?<a
+              class="text-black"
+              id="regButton"
+              href="../src/regist.html"
+            >
+              Register
+            </a>
+          </p>
+        </div>
+      </form>
+      <div class="flex flex-col w-1/4 justify-center">
+        <h1 id="admin" class="text-center w-full text-white p-5">ini admin</h1>
+        <h1 id="basic" class="text-center w-full text-white p-5">
+          ini bukan admin
+        </h1>
+        <button
+          class="text-white border-2 border-grey rounded-xl py-1 w-full font-semibold font-sans my-1"
+          onclick="onLogout()"
+          id="logoutButton"
+        >
+          Logout
+        </button>
+      </div>
+    </div>
+    <script src="../js/login.js"></script>
+  </body>
+</html>

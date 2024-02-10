@@ -1,0 +1,73 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Validation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="../js/regist.js"></script>
+  </head>
+  <body>
+    <div class="flex justify-center items-center bg-gray-800 h-screen">
+      <form
+        id="form"
+        action="/"
+        class="bg-transparent text-white w-80 p-2 border-2 border-gray-700 rounded-xl"
+      >
+        <h1 class="text-center font-bold text-xl py-2">Registration</h1>
+        <div class="flex flex-col text-semibold py-1 text-white">
+          <label for="username">Username</label>
+          <input
+            class="outline-none border-1 border-grey rounded-lg w-full text-black p-1 px-2"
+            id="username"
+            name="username"
+            type="text"
+          />
+          <div class="error"></div>
+        </div>
+        <div class="flex flex-col text-semibold py-1 text-white">
+          <label for="email">Email</label>
+          <input
+            class="outline-none border-1 border-grey rounded-lg w-full text-black p-1 px-2"
+            id="email"
+            name="email"
+            type="text"
+          />
+          <div class="error"></div>
+        </div>
+        <div class="flex flex-col text-semibold py-1 text-white">
+          <label for="password">Password</label>
+          <input
+            class="outline-none border-1 border-grey rounded-lg w-full text-black p-1 px-2"
+            id="password"
+            name="password"
+            type="password"
+          />
+          <div class="error"></div>
+        </div>
+        <div class="flex flex-col text-semibold py-1 text-white">
+          <label for="password2">Confirm Password</label>
+          <input
+            class="outline-none border-1 border-grey rounded-lg w-full text-black p-1 px-2"
+            id="password2"
+            name="password2"
+            type="password"
+          />
+          <div class="error"></div>
+        </div>
+        <button
+          onclick="submitBtn"
+          class="flex justify-center w-full my-3 py-2 border-1 border-grey bg-gray-700 rounded-xl"
+        >
+          Sign Up
+        </button>
+      </form>
+    </div>
+  </body>
+</html>
